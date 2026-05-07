@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Material palette placeholder</title>
+  <desc id="desc">Warm abstract placeholder blocks representing materials and finishes.</desc>
+  <rect width="1200" height="900" fill="#efe3d5"/>
+  <rect x="110" y="130" width="300" height="640" rx="24" fill="#9a6c46"/>
+  <rect x="450" y="130" width="640" height="260" rx="24" fill="#f7f0e6"/>
+  <rect x="450" y="430" width="300" height="340" rx="24" fill="#d5bea8"/>
+  <rect x="790" y="430" width="300" height="340" rx="24" fill="#6f4729"/>
+</svg>

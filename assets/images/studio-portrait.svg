@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1300" role="img" aria-labelledby="title desc">
+  <title id="title">Studio portrait placeholder</title>
+  <desc id="desc">Abstract portrait-style placeholder image.</desc>
+  <rect width="1000" height="1300" fill="#ddcab5"/>
+  <ellipse cx="500" cy="400" rx="210" ry="260" fill="#f4ebdf"/>
+  <rect x="270" y="620" width="460" height="420" rx="160" fill="#886148"/>
+  <rect x="330" y="1040" width="340" height="120" rx="50" fill="#cfae8d"/>
+</svg>

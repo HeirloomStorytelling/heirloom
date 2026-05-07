@@ -1,0 +1,19 @@
+title: Heirloom
+email: hello@example.com
+description: >-
+  A refined Jekyll portfolio site for Heirloom with editorial sections,
+  featured work, and contact details ready for customization.
+baseurl: ""
+url: ""
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+sass:
+  style: compressed
+collections_dir: .
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

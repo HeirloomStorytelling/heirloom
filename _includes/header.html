@@ -1,0 +1,20 @@
+{% assign nav_pages = "Home:/,About:/about/,Services:/services/,Work:/work/,Contact:/contact/" | split: "," %}
+<header class="site-header" data-site-header>
+  <div class="site-header__inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Heirloom home">Heirloom</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__icon" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-menu" data-site-menu aria-label="Primary">
+      <ul>
+        {% for item in nav_pages %}
+          {% assign parts = item | split: ":" %}
+          {% assign label = parts[0] %}
+          {% assign href = parts[1] %}
+          <li><a href="{{ href | relative_url }}">{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

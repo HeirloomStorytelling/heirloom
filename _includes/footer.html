@@ -1,23 +1,26 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <div>
-      <p class="site-footer__brand">Heirloom</p>
-      <p>A warm, editorial Jekyll portfolio starter ready for real imagery and final copy.</p>
-    </div>
-    <div>
-      <p class="site-footer__heading">Navigate</p>
+    <section class="site-footer__column site-footer__column--brand" aria-labelledby="footer-brand-heading">
+      <p class="site-footer__heading" id="footer-brand-heading">Heirloom Storytelling Services</p>
+      <p class="site-footer__tagline">Your Voice, Your Legacy</p>
+    </section>
+
+    <nav class="site-footer__column site-footer__column--links" aria-labelledby="footer-links-heading">
+      <p class="site-footer__heading" id="footer-links-heading">Quick Links</p>
       <ul class="site-footer__links">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li><a href="{{ '/about/' | relative_url }}">About</a></li>
         <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
-        <li><a href="{{ '/work/' | relative_url }}">Work</a></li>
+        <li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
         <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
       </ul>
-    </div>
-    <div>
-      <p class="site-footer__heading">Contact</p>
-      <p><a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p>Replace with your own studio details.</p>
-    </div>
+    </nav>
+
+    <section class="site-footer__column site-footer__column--contact" aria-labelledby="footer-contact-heading">
+      <p class="site-footer__heading" id="footer-contact-heading">Contact</p>
+      <!-- TODO: Replace with final business email address. -->
+      <p class="site-footer__email"><a href="mailto:heirloomstorytellingservices@gmail.com">heirloomstorytellingservices@gmail.com</a></p>
+      <a class="button site-footer__button" href="{{ '/contact/' | relative_url }}">Request a Consultation</a>
+    </section>
   </div>
 </footer>

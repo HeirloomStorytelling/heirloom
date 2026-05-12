@@ -1,14 +1,22 @@
-title: Heirloom
-email: hello@example.com
+title: Heirloom Storytelling Services
+email: heirloomstorytellingservices@gmail.com
 description: >-
-  A refined Jekyll portfolio site for Heirloom with editorial sections,
-  featured work, and contact details ready for customization.
+  Heirloom helps families preserve the voices, memories, and life stories of
+  loved ones through thoughtful storytelling, guided interviews, and legacy
+  keepsakes.
 baseurl: ""
 url: ""
+lang: en-US
+twitter:
+  card: summary_large_image
+logo: /assets/images/favicon.svg
+social_preview_image: /assets/images/social-preview.jpg
 markdown: kramdown
 permalink: pretty
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 sass:
   style: compressed
 collections_dir: .
@@ -17,3 +25,4 @@ defaults:
       path: ""
     values:
       layout: default
+      image: /assets/images/social-preview.jpg

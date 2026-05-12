@@ -3,14 +3,14 @@
   <desc id="desc">Abstract warm-toned placeholder artwork for the homepage hero.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e6d7c6"/>
-      <stop offset="100%" stop-color="#b68861"/>
+      <stop offset="0%" stop-color="#F7F3EF"/>
+      <stop offset="100%" stop-color="#B7ACA6"/>
     </linearGradient>
   </defs>
   <rect width="1600" height="1200" fill="url(#bg)"/>
-  <circle cx="420" cy="370" r="180" fill="#f5ecdf" opacity="0.9"/>
-  <circle cx="1080" cy="780" r="300" fill="#8d603f" opacity="0.25"/>
-  <rect x="300" y="220" width="860" height="620" rx="34" fill="#f7f2ea" opacity="0.5"/>
-  <rect x="380" y="300" width="700" height="460" rx="24" fill="#6e4a33" opacity="0.18"/>
-  <path d="M440 720c120-210 240-315 360-315 167 0 263 126 390 240" fill="none" stroke="#fff8ef" stroke-width="16" opacity="0.75"/>
+  <circle cx="420" cy="370" r="180" fill="#F7F3EF" opacity="0.9"/>
+  <circle cx="1080" cy="780" r="300" fill="#71173D" opacity="0.2"/>
+  <rect x="300" y="220" width="860" height="620" rx="34" fill="#B79A63" opacity="0.3"/>
+  <rect x="380" y="300" width="700" height="460" rx="24" fill="#3A302F" opacity="0.16"/>
+  <path d="M440 720c120-210 240-315 360-315 167 0 263 126 390 240" fill="none" stroke="#F7F3EF" stroke-width="16" opacity="0.75"/>
 </svg>

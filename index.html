@@ -1,126 +1,135 @@
 ---
 title: Home
 page_class: home-page
+description: Heirloom helps families preserve the voices, memories, and life stories of loved ones through guided interviews and polished storytelling keepsakes.
 ---
-<section class="hero hero-home">
-  <div class="hero__media reveal">
-    <img src="{{ '/assets/images/hero-studio.svg' | relative_url }}" alt="Placeholder editorial composition for Heirloom hero section">
-  </div>
-  <div class="hero__content reveal reveal--delay">
-    <p class="eyebrow">Portfolio Studio</p>
+<section class="hero hero-home hero-home--centered">
+  <div class="hero__content hero__content--centered reveal">
     <h1>Heirloom</h1>
-    <p class="hero__lede">A refined placeholder introduction for a visual practice shaped by warmth, restraint, and enduring detail.</p>
-    <div class="hero__actions">
-      <a class="button" href="{{ '/work/' | relative_url }}">View Featured Work</a>
-      <a class="button button--ghost" href="{{ '/contact/' | relative_url }}">Start a Conversation</a>
+    <p class="hero__tagline">Your Voice, Your Legacy</p>
+    <p class="hero__lede">Founded in 2026 to help you preserve your legacy, Heirloom Storytelling Services helps you create a polished final product that will be a cherished heirloom for generations to come. Unlike ghostwriting, our editors empower you to share your story through your words. We also offer professional recording and transcription services, which provide a lasting keepsake for your loved ones.</p>
+    <div class="hero__actions hero__actions--centered">
+      <a class="button" href="{{ '/about/' | relative_url }}">Learn More</a>
+      <a class="button button--ghost" href="{{ '/contact/' | relative_url }}">Request a Consultation</a>
     </div>
   </div>
 </section>
 
-<section class="editorial-grid section-block">
-  <article class="editorial-card editorial-card--wide reveal">
-    <div class="editorial-card__media">
-      <img src="{{ '/assets/images/interior-study.svg' | relative_url }}" alt="Placeholder interior concept image">
-    </div>
-    <div class="editorial-card__overlay">
-      <p class="eyebrow">Approach</p>
-      <h2>Designed to unfold like a guided presentation on desktop.</h2>
-      <p>Large image-led panels, calm pacing, and strong negative space create a polished framework for photography, copy, and future case studies.</p>
-    </div>
-  </article>
-
-  <article class="editorial-card reveal reveal--delay">
-    <div class="editorial-card__media">
-      <img src="{{ '/assets/images/material-palette.svg' | relative_url }}" alt="Placeholder material palette image">
-    </div>
-    <div class="editorial-card__body">
-      <p class="eyebrow">Materials</p>
-      <h3>Warm tones, tactile imagery, and measured typography.</h3>
-      <p>Placeholder text can be replaced with a concise statement about your values, process, or signature visual language.</p>
-    </div>
-  </article>
-
-  <article class="editorial-card reveal">
-    <div class="editorial-card__media">
-      <img src="{{ '/assets/images/project-notes.svg' | relative_url }}" alt="Placeholder detail sketch image">
-    </div>
-    <div class="editorial-card__body">
-      <p class="eyebrow">Intent</p>
-      <h3>Minimal navigation with clear pathways into the work.</h3>
-      <p>Use this space to introduce how clients move from inquiry to concept, development, and final delivery.</p>
-    </div>
-  </article>
-</section>
-
-<section class="split-story section-block section-block--accent">
-  <div class="split-story__content reveal">
-    <p class="eyebrow">About Heirloom</p>
-    <h2>An editorial, image-forward system built to feel mature and current.</h2>
-    <p>The layout is tuned for desktop immersion while remaining clean and readable on mobile. Replace this placeholder copy with brand narrative, founder perspective, or studio philosophy.</p>
-    <a class="text-link" href="{{ '/about/' | relative_url }}">Read the studio story</a>
+<section class="section-block section-block--narrow">
+  <div class="section-heading section-heading--centered reveal">
+    <p class="eyebrow">How Heirloom Helps</p>
+    <h2>A clear, respectful way to preserve the stories that matter.</h2>
+    <p>Heirloom helps families document memories through guided conversations, careful editing, and keepsakes designed to be shared and revisited.</p>
   </div>
-  <div class="split-story__stack reveal reveal--delay">
-    <img src="{{ '/assets/images/studio-portrait.svg' | relative_url }}" alt="Placeholder studio portrait image">
-    <img src="{{ '/assets/images/object-study.svg' | relative_url }}" alt="Placeholder object study image">
-  </div>
-</section>
-
-<section class="services-preview section-block">
-  <div class="section-heading reveal">
-    <p class="eyebrow">Offerings</p>
-    <h2>Flexible sections for services, retainers, or signature packages.</h2>
-  </div>
-  <div class="service-cards">
+  <div class="service-cards service-cards--balanced">
     <article class="service-card reveal">
-      <h3>Creative Direction</h3>
-      <p>Placeholder copy for brand direction, concept development, spatial styling, or campaign vision.</p>
+      <h3>Thoughtful Guidance</h3>
+      <p>Each conversation is structured with care so the process feels clear, calm, and easy to follow.</p>
     </article>
     <article class="service-card reveal reveal--delay">
-      <h3>Portfolio Presentation</h3>
-      <p>Use this card for installations, interiors, hospitality work, product stories, or residential projects.</p>
+      <h3>Professional Editing</h3>
+      <p>Stories are shaped with restraint and clarity so the final piece feels polished without losing its voice.</p>
     </article>
     <article class="service-card reveal">
-      <h3>Consultation</h3>
-      <p>A compact slot for strategy sessions, sourcing support, or project-based advisory work.</p>
+      <h3>Lasting Keepsakes</h3>
+      <p>Every project is prepared to be revisited over time and shared with the people who matter most.</p>
     </article>
   </div>
-  <a class="text-link reveal" href="{{ '/services/' | relative_url }}">Explore all offerings</a>
 </section>
 
-<section class="featured-work section-block">
-  <div class="section-heading reveal">
-    <p class="eyebrow">Featured Work</p>
-    <h2>Strong cards for projects, case studies, or selected collaborations.</h2>
+<section class="section-block section-block--soft" id="client-testimonials">
+  <div class="section-heading section-heading--centered reveal">
+    <p class="eyebrow">Client Testimonials</p>
+    <h2>Client Testimonials</h2>
   </div>
-  <div class="work-grid">
+  <div class="testimonial-carousel reveal" data-testimonial-carousel data-interval="7000" aria-label="Client testimonials">
+    <button class="testimonial-carousel__control testimonial-carousel__control--prev" type="button" data-testimonial-prev aria-label="Previous testimonial">
+      <span aria-hidden="true">‹</span>
+    </button>
+    <div class="testimonial-carousel__viewport" data-testimonial-viewport>
+      <div class="testimonial-carousel__track" data-testimonial-track>
+        <article class="testimonial-card" data-testimonial-slide>
+          <p class="testimonial-card__name">Linda</p>
+          <p class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+          </p>
+          <p class="testimonial-card__quote">“The process was clear, thoughtful, and handled with care from beginning to end.”</p>
+        </article>
+        <article class="testimonial-card" data-testimonial-slide>
+          <p class="testimonial-card__name">Robert</p>
+          <p class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+          </p>
+          <p class="testimonial-card__quote">“Everything felt organized and professional, and I always knew what to expect.”</p>
+        </article>
+        <article class="testimonial-card" data-testimonial-slide>
+          <p class="testimonial-card__name">Susan</p>
+          <p class="testimonial-card__stars" aria-label="4 out of 5 stars">
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span class="is-filled">★</span>
+            <span>★</span>
+          </p>
+          <p class="testimonial-card__quote">“The experience was simple, respectful, and easy to understand.”</p>
+        </article>
+      </div>
+    </div>
+    <button class="testimonial-carousel__control testimonial-carousel__control--next" type="button" data-testimonial-next aria-label="Next testimonial">
+      <span aria-hidden="true">›</span>
+    </button>
+  </div>
+</section>
+
+<section class="section-block section-block--narrow">
+  <div class="section-heading section-heading--centered reveal">
+    <p class="eyebrow">Why It Matters</p>
+    <h2>Preserving voice and memory takes care, patience, and a process people can trust.</h2>
+    <p>Heirloom is designed to feel organized and approachable, with clear expectations, readable materials, and a pace that respects the family sharing the story.</p>
+  </div>
+</section>
+
+<section class="section-block section-block--narrow">
+  <div class="section-heading section-heading--centered reveal">
+    <p class="eyebrow">Sample Work</p>
+    <h2>Examples of the kinds of keepsakes a family may choose to create.</h2>
+  </div>
+  <div class="work-grid work-grid--text">
     <article class="work-card reveal">
-      <img src="{{ '/assets/images/work-residence.svg' | relative_url }}" alt="Placeholder residence project image">
       <div class="work-card__body">
-        <h3>North House Residence</h3>
-        <p>Residential concept, material curation, and layered styling.</p>
+        <h3>Written Family Profile</h3>
+        <p>A polished narrative built from guided interviews and family memory.</p>
       </div>
     </article>
     <article class="work-card reveal reveal--delay">
-      <img src="{{ '/assets/images/work-hospitality.svg' | relative_url }}" alt="Placeholder hospitality project image">
       <div class="work-card__body">
-        <h3>Gathering Room</h3>
-        <p>Hospitality identity with warm textures and understated detail.</p>
+        <h3>Audio Story Keepsake</h3>
+        <p>An edited recording that preserves voice, cadence, and reflection in a lasting format.</p>
       </div>
     </article>
     <article class="work-card reveal">
-      <img src="{{ '/assets/images/work-editorial.svg' | relative_url }}" alt="Placeholder editorial campaign image">
       <div class="work-card__body">
-        <h3>Quiet Objects</h3>
-        <p>Editorial imagery and product storytelling for a seasonal release.</p>
+        <h3>Legacy Collection</h3>
+        <p>A more complete set of stories prepared for private family sharing and future generations.</p>
       </div>
     </article>
   </div>
-  <a class="button reveal" href="{{ '/work/' | relative_url }}">See the Portfolio</a>
 </section>
 
 <section class="cta-band section-block section-block--compact reveal">
-  <p class="eyebrow">Contact</p>
-  <h2>Ready to replace the placeholders with your own story, work, and imagery.</h2>
-  <p>Use this section as a concise inquiry prompt with a strong next step.</p>
-  <a class="button" href="{{ '/contact/' | relative_url }}">Get in Touch</a>
+  <p class="eyebrow">Next Step</p>
+  <h2>Ready to talk through the story you want to preserve?</h2>
+  <p>Use the contact page to ask about timing, services, or a consultation.</p>
+  <div class="hero__actions cta-actions">
+    <a class="button" href="{{ '/contact/' | relative_url }}">Request a Consultation</a>
+    <a class="button button--ghost" href="{{ '/services/' | relative_url }}">View Services</a>
+  </div>
 </section>

@@ -18,6 +18,7 @@ description: Explore Heirloom Storytelling Services and the ways family stories 
     <h2>Our Process</h2>
     <p>We believe no two stories are alike. Every service is fully customizable, ensuring your heirloom reflects your voice, your experiences, and your legacy.</p>
     <p>To ensure a truly personal experience, you will work closely with the same professional storyteller from beginning to end, allowing your story to be shaped with care, continuity, and a deep understanding of what matters most to you.</p>
+    <p>Following your consultation, we will provide a personalized proposal outlining recommended services, timeline, and pricing. If you choose to move forward, you will receive a clear service agreement so expectations, details, and completion timelines feel transparent and comfortable from the start.</p>
   </div>
 </section>
 

@@ -17,48 +17,49 @@ description: Common questions about Heirloom Storytelling Services, including pr
     <article class="faq-item is-open">
       <h2 class="faq-item__heading">
         <button class="faq-item__trigger" type="button" aria-expanded="true" aria-controls="faq-panel-1" id="faq-trigger-1">
-          <span>How long will my project take?</span>
+          <span>How long will my story take to complete?</span>
           <span class="faq-item__icon" aria-hidden="true">+</span>
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
-        <p>The completion time depends on the scope of your project, and delivery timelines will be provided as part of the formal proposal before work begins.</p>
+        <p>Each story is unique, and timelines vary depending on the nature and scope of the work. Before any services begin, we provide a clear service agreement outlining expectations, timeline, and pricing so you can move forward with confidence.</p>
       </div>
     </article>
 
     <article class="faq-item">
       <h2 class="faq-item__heading">
         <button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
-          <span>What if I don’t feel confident in my writing or storytelling abilities?</span>
+          <span>What if I do not feel confident in my writing abilities?</span>
           <span class="faq-item__icon" aria-hidden="true">+</span>
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2" hidden>
-        <p>Many of our clients have never written before or do not think of themselves as authors. Our role is to guide and support you throughout the process so your story can be shared in a way that feels authentic and comfortable to you.</p>
+        <p>You do not need to think of yourself as a writer to preserve your story. Many of our clients begin with memories, conversations, handwritten notes, or simply a desire to preserve something meaningful. Some prefer writing, while others feel more comfortable speaking aloud and having their words thoughtfully transcribed.</p>
+        <p>Wherever you begin, we meet you there. Through one-on-one support, we help shape your story in a way that feels natural, comfortable, and authentic to you.</p>
       </div>
     </article>
 
     <article class="faq-item">
       <h2 class="faq-item__heading">
         <button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
-          <span>How is my information handled?</span>
+          <span>How is my personal information handled?</span>
           <span class="faq-item__icon" aria-hidden="true">+</span>
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
-        <p>We handle your information with the utmost care and security, and it is never shared outside our team without your consent.</p>
+        <p>We treat your stories and personal information with the utmost care, professionalism, and confidentiality. Your materials are never shared outside our team without your permission.</p>
       </div>
     </article>
 
     <article class="faq-item">
       <h2 class="faq-item__heading">
         <button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
-          <span>Where can I see your portfolio?</span>
+          <span>Can I see examples of past work?</span>
           <span class="faq-item__icon" aria-hidden="true">+</span>
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4" hidden>
-        <p>We maintain a strong commitment to confidentiality and respect for our clients and their stories. Because of the personal and private nature of many projects, we are limited in what we can publicly share. However, we encourage you to review past client <a href="{{ '/#client-testimonials' | relative_url }}">testimonials</a> and welcome the opportunity to answer any questions you may have during a consultation.</p>
+        <p>We deeply value the trust our clients place in us and are committed to maintaining confidentiality. Because our work involves deeply personal stories and family histories, we do not publicly share client projects. However, we encourage you to review <a href="{{ '/#client-testimonials' | relative_url }}">testimonials</a> and are always happy to answer questions during a complimentary consultation.</p>
       </div>
     </article>
 
@@ -70,31 +71,32 @@ description: Common questions about Heirloom Storytelling Services, including pr
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5" hidden>
-        <p>Due to the unique nature of each commission, pricing depends on the scope and needs of the project. Clients receive a formal agreement before work begins to ensure both parties clearly understand the services and pricing involved. Please schedule a complimentary consultation to learn more.</p>
+        <p>Because every story is unique, pricing varies based on the level of support, timeline, and scope of the work.</p>
+        <p>Heirloom is committed to offering thoughtful, professional storytelling services at a more approachable investment than many traditional memoir and ghostwriting options, while still providing highly personalized support. Following your complimentary consultation, we will provide detailed pricing based on your goals and the approach best suited to preserving your story.</p>
       </div>
     </article>
 
     <article class="faq-item">
       <h2 class="faq-item__heading">
         <button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-6" id="faq-trigger-6">
-          <span>What if I’m looking for a storytelling service not listed on your website?</span>
+          <span>What if I am looking for a storytelling service not listed on your website?</span>
           <span class="faq-item__icon" aria-hidden="true">+</span>
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-6" role="region" aria-labelledby="faq-trigger-6" hidden>
-        <p>We will do everything we can to support your vision and are happy to discuss any needs you may have. If we are unable to accommodate your request, we will make every effort to refer you to another trusted provider who may better serve your needs.</p>
+        <p>We welcome thoughtful conversations about unique requests and will always do our best to support your vision. If we are not the best fit for your needs, we will gladly help connect you with trusted resources that may better serve you.</p>
       </div>
     </article>
 
     <article class="faq-item">
       <h2 class="faq-item__heading">
         <button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-7" id="faq-trigger-7">
-          <span>Do you serve clients outside of the Treasure Valley?</span>
+          <span>Do you work with clients outside the Treasure Valley?</span>
           <span class="faq-item__icon" aria-hidden="true">+</span>
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-7" role="region" aria-labelledby="faq-trigger-7" hidden>
-        <p>Absolutely. We are happy to accommodate clients outside our service area through virtual meetings and other technology-based solutions.</p>
+        <p>Absolutely. While we are proud to serve clients locally in Boise and throughout the Treasure Valley, we also work with clients remotely through virtual meetings and technology.</p>
       </div>
     </article>
 
@@ -106,7 +108,19 @@ description: Common questions about Heirloom Storytelling Services, including pr
         </button>
       </h2>
       <div class="faq-item__panel" id="faq-panel-8" role="region" aria-labelledby="faq-trigger-8" hidden>
-        <p>We focus on helping you refine and preserve your story, and we do not currently offer formatting or publishing services directly. However, we are happy to connect clients with trusted formatting and printing partners upon request.</p>
+        <p>Our focus is on helping preserve and thoughtfully refine the content of your story. While we do not currently provide formatting or publishing services, we are happy to connect clients with trusted professionals for printing, formatting, or publishing support upon request.</p>
+      </div>
+    </article>
+
+    <article class="faq-item">
+      <h2 class="faq-item__heading">
+        <button class="faq-item__trigger" type="button" aria-expanded="false" aria-controls="faq-panel-9" id="faq-trigger-9">
+          <span>Where can I review a sample service agreement?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+      </h2>
+      <div class="faq-item__panel" id="faq-panel-9" role="region" aria-labelledby="faq-trigger-9" hidden>
+        <p>We value clarity and transparency. A sample agreement is available upon request for those who would like to better understand our process. Please email <a href="mailto:heirloomstorytellingservices@gmail.com">heirloomstorytellingservices@gmail.com</a> for more details.</p>
       </div>
     </article>
   </div>

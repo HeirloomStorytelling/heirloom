@@ -1,5 +1,6 @@
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const siteMenu = document.querySelector("[data-site-menu]");
+const siteHeader = document.querySelector("[data-site-header]");
 
 if (menuToggle && siteMenu) {
   menuToggle.addEventListener("click", () => {
@@ -13,6 +14,51 @@ if (menuToggle && siteMenu) {
       menuToggle.setAttribute("aria-expanded", "false");
     });
   });
+}
+
+if (siteHeader) {
+  let isScrolled = false;
+  let isAnimatingHeader = false;
+  let lastScrollY = window.scrollY;
+  let headerAnimationId = null;
+
+  const setScrolledState = (nextState) => {
+    if (isScrolled === nextState || isAnimatingHeader) {
+      return;
+    }
+
+    isScrolled = nextState;
+    isAnimatingHeader = true;
+    document.body.classList.toggle("is-scrolled", isScrolled);
+
+    if (headerAnimationId) {
+      window.clearTimeout(headerAnimationId);
+    }
+
+    headerAnimationId = window.setTimeout(() => {
+      isAnimatingHeader = false;
+      headerAnimationId = null;
+    }, 320);
+  };
+
+  const syncHeaderState = () => {
+    const scrollY = window.scrollY;
+    const isScrollingDown = scrollY > lastScrollY;
+    const isScrollingUp = scrollY < lastScrollY;
+
+    if (!isAnimatingHeader) {
+      if (!isScrolled && isScrollingDown && scrollY > 56) {
+        setScrolledState(true);
+      } else if (isScrolled && isScrollingUp && scrollY < 20) {
+        setScrolledState(false);
+      }
+    }
+
+    lastScrollY = scrollY;
+  };
+
+  syncHeaderState();
+  window.addEventListener("scroll", syncHeaderState, { passive: true });
 }
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -52,6 +98,7 @@ if (testimonialCarousel) {
   let currentIndex = 1;
   let autoplayId = null;
   let isJumping = false;
+  let isAnimating = false;
 
   if (viewport && track && originalSlides.length > 1) {
     const firstClone = originalSlides[0].cloneNode(true);
@@ -79,6 +126,11 @@ if (testimonialCarousel) {
     };
 
     const moveToIndex = (index, animate = true) => {
+      if (animate && isAnimating) {
+        return;
+      }
+
+      isAnimating = animate && !reducedMotion;
       track.style.transition = animate && !reducedMotion ? "transform 520ms ease" : "none";
       track.style.transform = `translate3d(${-offsetForSlide(index)}px, 0, 0)`;
       currentIndex = index;
@@ -111,7 +163,7 @@ if (testimonialCarousel) {
     moveToIndex(currentIndex, false);
 
     nextButton?.addEventListener("click", () => {
-      if (isJumping) {
+      if (isJumping || isAnimating) {
         return;
       }
 
@@ -120,7 +172,7 @@ if (testimonialCarousel) {
     });
 
     prevButton?.addEventListener("click", () => {
-      if (isJumping) {
+      if (isJumping || isAnimating) {
         return;
       }
 
@@ -133,7 +185,13 @@ if (testimonialCarousel) {
     testimonialCarousel.addEventListener("focusin", stopAutoplay);
     testimonialCarousel.addEventListener("focusout", startAutoplay);
 
-    track.addEventListener("transitionend", () => {
+    track.addEventListener("transitionend", (event) => {
+      if (event.target !== track || event.propertyName !== "transform") {
+        return;
+      }
+
+      isAnimating = false;
+
       if (currentIndex === slides.length - 1) {
         isJumping = true;
         moveToIndex(1, false);
@@ -146,6 +204,7 @@ if (testimonialCarousel) {
     });
 
     window.addEventListener("resize", () => {
+      isAnimating = false;
       moveToIndex(currentIndex, false);
     });
 

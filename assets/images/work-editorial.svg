@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
-  <title id="title">Editorial project placeholder</title>
-  <desc id="desc">Abstract placeholder for an editorial portfolio image.</desc>
-  <rect width="1200" height="900" fill="#F7F3EF"/>
-  <rect x="190" y="120" width="820" height="660" rx="30" fill="#F7F3EF"/>
-  <path d="M270 650c84-240 200-360 348-360 124 0 226 78 334 210" fill="none" stroke="#B79A63" stroke-width="24" opacity="0.9"/>
-  <circle cx="760" cy="390" r="126" fill="#B7ACA6"/>
-  <circle cx="520" cy="470" r="94" fill="#71173D" opacity="0.82"/>
-</svg>

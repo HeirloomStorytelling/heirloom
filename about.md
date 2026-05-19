@@ -8,7 +8,7 @@ description: Learn more about Heirloom Storytelling Services and the thoughtful,
   <div class="page-hero__content reveal">
     <p class="eyebrow">About</p>
     <h1>Why Heirloom?</h1>
-    <p>At Heirloom, we believe every life story deserves to be preserved with care.</p>
+    <p>At Heirloom, we believe your life story deserves to be preserved with care.</p>
     <p>Unlike entirely self-guided storytelling services, we offer one-on-one support throughout the process, helping bring your memories to life in a way that feels comfortable and personal. At the same time, our approach is more flexible and approachable than traditional ghostwriting, which often requires a commitment to a full-length book.</p>
     <p>We do not write your story for you&mdash;we help you preserve it in your own words, in your own voice.</p>
     <p>Whether you feel confident putting memories on paper or do not know where to begin, we guide you through a thoughtful, tailored process designed around your goals. Our commitment is simple: to create a beautifully refined heirloom you feel proud to share with those you love.</p>
@@ -27,8 +27,8 @@ description: Learn more about Heirloom Storytelling Services and the thoughtful,
       <img src="{{ '/assets/images/Storyteller Headshots/Amara-Fuhriman.webp' | relative_url }}" alt="Headshot of Amara Fuhriman">
     </div>
     <div class="storyteller-card__content">
-      <p class="eyebrow">Our Storytellers</p>
-      <h2>Our Storytellers</h2>
+      <p class="eyebrow">Meet Our Storytellers</p>
+      <h2>Your Storyteller</h2>
       <h3>Amara Fuhriman</h3>
       <p>Known for her thoughtful listening and meaningful questions, Amara founded Heirloom Storytelling Services in 2026 after several years of working independently with clients to help preserve meaningful stories and life experiences.</p>
       <p>Since 2023, she has worked with individuals seeking a trusted guide to help shape personal histories, memoirs, and meaningful keepsakes for loved ones. Clients appreciate her warm, attentive nature and her ability to create a comfortable environment where stories unfold naturally.</p>

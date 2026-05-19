@@ -7,30 +7,19 @@ description: Contact Heirloom Storytelling Services to begin a conversation abou
 <section class="page-hero page-hero--compact">
   <div class="page-hero__content reveal">
     <p class="eyebrow">Contact</p>
-    <h1>Begin with a simple conversation about the story you want to preserve.</h1>
-    <p>Reach out with a few details and Heirloom can help determine the right scope, timing, and format.</p>
-  </div>
-</section>
-
-<section class="contact-layout section-block">
-  <div class="contact-panel reveal">
-    <h2>Inquiry</h2>
-    <!-- TODO: Replace with final business email address. -->
-    <p><strong>Email</strong><br>heirloomstorytellingservices@gmail.com</p>
-    <p><strong>Location</strong><br>City, State or Remote</p>
-    <p><strong>Availability</strong><br>By inquiry, based on scope and schedule.</p>
-  </div>
-  <div class="contact-panel contact-panel--accent reveal reveal--delay">
-    <h2>What to Include</h2>
-    <p>Share the family story you hope to preserve, any timing considerations, and whether you are interested in written, audio, or multi-format keepsakes.</p>
-    <a class="button" href="mailto:heirloomstorytellingservices@gmail.com">Email Heirloom</a>
+    <h1>Consultation</h1>
+    <p>Your story deserves thoughtful care.</p>
+    <p>During your complimentary consultation, you will meet one-on-one with a member of our storytelling team to discuss your goals, interests, and hopes for the project. Together, we will explore the best approach for preserving your story in a way that feels comfortable and meaningful to you.</p>
+    <p>To ensure consistency and a truly personalized experience, you will work with the same storyteller throughout the process, beginning with the initial consultation.</p>
+    <p>We are pleased to offer both in-person and Zoom consultations. For local clients, we are happy to meet at a location of your choosing throughout the Treasure Valley.</p>
+    <p>Whether you already know exactly what you want or are simply exploring possibilities, we welcome the opportunity to answer your questions in a thoughtful, no-pressure environment.</p>
   </div>
 </section>
 
 <section class="cta-band section-block section-block--compact reveal">
-  <p class="eyebrow">Future Inquiry Form</p>
-  <h2>A simple form can be added here when the site is ready for it.</h2>
-  <p>For now, email is the clearest way to begin.</p>
+  <p class="eyebrow">Inquiry Form</p>
+  <h2>Use the form below to request a consultation and begin the conversation.</h2>
+  <p>You can use this space to share your interests, questions, and the kind of story you hope to preserve.</p>
   <!-- Future contact/pricing inquiry form should be placed here. -->
   <!-- Do not wire this to Netlify Forms yet. -->
   <div class="form-placeholder">

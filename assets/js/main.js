@@ -190,3 +190,72 @@ if (faqAccordion) {
     });
   });
 }
+
+const serviceAccordion = document.querySelector("[data-service-accordion]");
+
+if (serviceAccordion) {
+  const serviceItems = Array.from(serviceAccordion.querySelectorAll(".service-option"));
+
+  const closeItem = (item) => {
+    const trigger = item.querySelector("[data-service-trigger]");
+    const panel = item.querySelector("[data-service-panel]");
+
+    if (!trigger || !panel || !item.classList.contains("is-open")) {
+      return;
+    }
+
+    item.classList.remove("is-open");
+    trigger.setAttribute("aria-expanded", "false");
+
+    const handleTransitionEnd = (event) => {
+      if (event.target !== panel) {
+        return;
+      }
+
+      panel.hidden = true;
+      panel.removeEventListener("transitionend", handleTransitionEnd);
+    };
+
+    panel.addEventListener("transitionend", handleTransitionEnd);
+  };
+
+  const openItem = (item) => {
+    const trigger = item.querySelector("[data-service-trigger]");
+    const panel = item.querySelector("[data-service-panel]");
+
+    if (!trigger || !panel) {
+      return;
+    }
+
+    panel.hidden = false;
+
+    window.requestAnimationFrame(() => {
+      item.classList.add("is-open");
+      trigger.setAttribute("aria-expanded", "true");
+    });
+  };
+
+  serviceItems.forEach((item) => {
+    const trigger = item.querySelector("[data-service-trigger]");
+
+    if (!trigger) {
+      return;
+    }
+
+    trigger.addEventListener("click", () => {
+      const isOpen = item.classList.contains("is-open");
+
+      serviceItems.forEach((entry) => {
+        if (entry !== item) {
+          closeItem(entry);
+        }
+      });
+
+      if (isOpen) {
+        closeItem(item);
+      } else {
+        openItem(item);
+      }
+    });
+  });
+}

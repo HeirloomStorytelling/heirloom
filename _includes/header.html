@@ -1,7 +1,9 @@
 {% assign nav_pages = "Home:/,About:/about/,Services:/services/,FAQ:/faq/,Contact:/contact/" | split: "," %}
 <header class="site-header" data-site-header>
   <div class="site-header__inner">
-    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Heirloom home">Heirloom</a>
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Heirloom home">
+      <img class="site-brand__logo" src="{{ '/assets/images/Heirloom-Logo.png' | relative_url }}" alt="Heirloom">
+    </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
       <span class="menu-toggle__label">Menu</span>
       <span class="menu-toggle__icon" aria-hidden="true"></span>

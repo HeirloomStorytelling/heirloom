@@ -126,6 +126,19 @@ main {
   text-transform: uppercase;
 }
 
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.site-brand__logo {
+  width: auto;
+  height: clamp(3.15rem, 5vw, 3.85rem);
+  transform-origin: left center;
+  transition: height 260ms ease, transform 260ms ease;
+}
+
 body.is-scrolled .site-header {
   background: rgba(113, 23, 61, 0.9);
   box-shadow: 0 6px 18px rgba(58, 48, 47, 0.07);
@@ -133,6 +146,10 @@ body.is-scrolled .site-header {
 
 body.is-scrolled .site-header__inner {
   min-height: 4.35rem;
+}
+
+body.is-scrolled .site-brand__logo {
+  height: clamp(2.55rem, 4vw, 3rem);
 }
 
 .site-header .site-brand,
@@ -303,6 +320,17 @@ body.is-scrolled .site-header__inner {
   font-family: var(--display);
   font-size: clamp(1.3rem, 2.3vw, 1.8rem);
   line-height: 1.35;
+}
+
+.hero-home__mark {
+  width: min(34rem, 100%);
+}
+
+.hero-home__logo {
+  width: 100%;
+  max-width: 34rem;
+  margin: 0 auto;
+  height: auto;
 }
 
 .eyebrow {
@@ -1182,6 +1210,10 @@ p + p {
 
   .site-header__inner {
     min-height: 4.5rem;
+  }
+
+  .site-brand__logo {
+    height: 2.8rem;
   }
 
   .menu-toggle {

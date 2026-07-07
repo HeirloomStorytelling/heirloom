@@ -62,6 +62,22 @@ a:hover {
   color: var(--accent-deep);
 }
 
+a[href^="mailto:"] {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(113, 23, 61, 0.42);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.22em;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="mailto:"]:focus-visible {
+  color: var(--text);
+  text-decoration-color: var(--accent);
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--accent);
@@ -519,6 +535,15 @@ p + p {
   padding-bottom: clamp(4.25rem, 7vw, 6rem);
 }
 
+.services-process {
+  padding-top: clamp(2.25rem, 4vw, 3.5rem);
+  padding-bottom: clamp(1.75rem, 3vw, 2.75rem);
+}
+
+.services-process + .service-list {
+  padding-top: clamp(1.75rem, 3vw, 2.75rem);
+}
+
 .section-heading {
   display: grid;
   gap: 1.05rem;
@@ -672,6 +697,10 @@ p + p {
   padding: clamp(2rem, 4vw, 2.75rem);
 }
 
+.service-note-card {
+  margin-bottom: 1rem;
+}
+
 .page-hero--compact {
   min-height: auto;
   grid-template-columns: 1fr;
@@ -810,10 +839,54 @@ p + p {
   height: 0.5rem;
 }
 
+.service-option__callout {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.35rem;
+  padding: 1.2rem 1.35rem;
+  background: rgba(247, 243, 239, 0.74);
+  border: 1px solid rgba(183, 154, 99, 0.34);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 28px rgba(58, 48, 47, 0.07);
+}
+
+.service-option__callout ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.service-option__callout p {
+  margin: 0;
+  color: var(--text-soft);
+  font: inherit;
+  font-style: italic;
+  font-weight: inherit;
+}
+
+.service-option__note {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.2rem;
+  padding: 1.25rem 1.35rem;
+  background: rgba(113, 23, 61, 0.06);
+  border: 1px solid rgba(113, 23, 61, 0.16);
+  border-radius: var(--radius-sm);
+}
+
+.service-option__note p {
+  margin: 0;
+}
+
 .service-option__subheading {
   margin: 0.5rem 0 0;
   color: var(--accent-deep);
   font-size: 1.2rem;
+}
+
+.service-option__callout .service-option__subheading,
+.service-option__note .service-option__subheading {
+  margin: 0;
 }
 
 .contact-layout {
@@ -1007,14 +1080,14 @@ p + p {
 }
 
 .site-footer__email a {
-  color: var(--text);
+  color: var(--accent-deep);
   font-weight: 600;
   font-size: 1rem;
   word-break: break-word;
 }
 
 .site-footer__email a:hover {
-  color: var(--accent-deep);
+  color: var(--text);
 }
 
 .site-footer__email {

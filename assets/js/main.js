@@ -255,6 +255,25 @@ const serviceAccordion = document.querySelector("[data-service-accordion]");
 if (serviceAccordion) {
   const serviceItems = Array.from(serviceAccordion.querySelectorAll(".service-option"));
 
+  const closeNestedNotes = (item) => {
+    item.querySelectorAll("[data-note-accordion].is-open").forEach((note) => {
+      const trigger = note.querySelector("[data-note-toggle]");
+      const panel = note.querySelector("[data-note-panel]");
+      const label = note.querySelector("[data-note-label]");
+
+      note.classList.remove("is-open");
+      trigger?.setAttribute("aria-expanded", "false");
+
+      if (trigger && label) {
+        label.textContent = trigger.dataset.closedLabel || label.textContent;
+      }
+
+      if (panel) {
+        panel.hidden = true;
+      }
+    });
+  };
+
   const closeItem = (item) => {
     const trigger = item.querySelector("[data-service-trigger]");
     const panel = item.querySelector("[data-service-panel]");
@@ -265,6 +284,7 @@ if (serviceAccordion) {
 
     item.classList.remove("is-open");
     trigger.setAttribute("aria-expanded", "false");
+    closeNestedNotes(item);
 
     const handleTransitionEnd = (event) => {
       if (event.target !== panel) {
@@ -314,6 +334,51 @@ if (serviceAccordion) {
         closeItem(item);
       } else {
         openItem(item);
+      }
+    });
+  });
+
+  serviceAccordion.querySelectorAll("[data-note-accordion]").forEach((note) => {
+    const trigger = note.querySelector("[data-note-toggle]");
+    const panel = note.querySelector("[data-note-panel]");
+    const label = note.querySelector("[data-note-label]");
+
+    if (!trigger || !panel) {
+      return;
+    }
+
+    trigger.addEventListener("click", () => {
+      const isOpen = note.classList.contains("is-open");
+
+      if (isOpen) {
+        note.classList.remove("is-open");
+        trigger.setAttribute("aria-expanded", "false");
+
+        if (label) {
+          label.textContent = trigger.dataset.closedLabel || label.textContent;
+        }
+
+        const handleTransitionEnd = (event) => {
+          if (event.target !== panel) {
+            return;
+          }
+
+          panel.hidden = true;
+          panel.removeEventListener("transitionend", handleTransitionEnd);
+        };
+
+        panel.addEventListener("transitionend", handleTransitionEnd);
+      } else {
+        panel.hidden = false;
+
+        window.requestAnimationFrame(() => {
+          note.classList.add("is-open");
+          trigger.setAttribute("aria-expanded", "true");
+
+          if (label) {
+            label.textContent = trigger.dataset.openLabel || label.textContent;
+          }
+        });
       }
     });
   });

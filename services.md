@@ -18,7 +18,7 @@ description: Explore Heirloom Storytelling Services and the ways family stories 
     <h2>Our Process</h2>
     <p>We believe no two stories are alike. Every service is fully customizable, ensuring your heirloom reflects your voice, your experiences, and your legacy.</p>
     <p>To ensure a truly personal experience, you will work closely with the same professional storyteller from beginning to end, allowing your story to be shaped with care, continuity, and a deep understanding of what matters most to you.</p>
-    <p>Following your consultation, we will provide a personalized proposal outlining recommended services, timeline, and pricing. If you choose to move forward, you will receive a clear service agreement so expectations, details, and completion timelines feel transparent and comfortable from the start.</p>
+    <p>Following your consultation, we will provide a personalized proposal outlining recommended services, timeline, and pricing. This helps expectations, details, and completion timelines feel transparent and comfortable from the start.</p>
   </div>
 </section>
 
@@ -151,11 +151,20 @@ description: Explore Heirloom Storytelling Services and the ways family stories 
         <p>Together, we develop a clear and personalized roadmap for your memoir, including themes, structure, timeline, and overall vision. Throughout the process, we work closely with you to ensure your story remains true to your experiences and voice.</p>
         <p>Unlike traditional ghostwriting services, our approach allows your perspective and personality to remain at the center of the story while providing professional support and thoughtful refinement along the way.</p>
         <p>Upon completion, your edited memoir manuscript will be delivered electronically in a secure format.</p>
-        <div class="service-option__note">
-          <h3 class="service-option__subheading">Memoir vs Autobiography</h3>
-          <p>An autobiography tells the story of an individual&rsquo;s life from beginning to present day, generally following a chronological timeline.</p>
-          <p>A memoir, by contrast, focuses on a meaningful chapter, theme, or defining experience. Memoirs are often more reflective and personal, exploring lessons, relationships, memories, and moments that shaped a life.</p>
-          <p>For many of our clients, memoirs provide the ideal way to preserve meaningful stories without the commitment of documenting an entire lifetime. However, we are equally happy to help you preserve your story through a full autobiography if that better reflects your vision.</p>
+        <div class="service-option__note" data-note-accordion>
+          <h3 class="service-option__subheading">
+            <button class="service-option__note-trigger" type="button" aria-expanded="false" aria-controls="memoir-vs-autobiography" data-note-toggle data-closed-label="What is the difference between a Memoir and an Autobiography?" data-open-label="Memoir vs Autobiography">
+              <span data-note-label>What is the difference between a Memoir and an Autobiography?</span>
+              <span class="service-option__note-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="service-option__note-panel" id="memoir-vs-autobiography" hidden data-note-panel>
+            <div class="service-option__note-body">
+              <p>An autobiography tells the story of an individual&rsquo;s life from beginning to present day, generally following a chronological timeline.</p>
+              <p>A memoir, by contrast, focuses on a meaningful chapter, theme, or defining experience. Memoirs are often more reflective and personal, exploring lessons, relationships, memories, and moments that shaped a life.</p>
+              <p>For many of our clients, memoirs provide the ideal way to preserve meaningful stories without the commitment of documenting an entire lifetime. However, we are equally happy to help you preserve your story through a full autobiography if that better reflects your vision.</p>
+            </div>
+          </div>
         </div>
         <div class="service-option__callout">
           <h3 class="service-option__subheading">This package includes:</h3>

@@ -32,3 +32,8 @@ These notes preserve implementation context for future Codex sessions. Keep this
 
 - Read this file before making substantive site changes.
 - Update this file before finishing a session when changes affect layout, content structure, image workflows, deployment URLs, or future maintenance expectations.
+- About page hero spacing uses `about-page__hero` for the gap between the “Why Heirloom?” heading and body copy.
+- The About page storyteller accent is a same-size filled plum `box-shadow` layer on `.storyteller-card`, offset equally right and bottom; the card uses a persistent gold border.
+- “Next Steps” CTA cards use `cta-band--next-steps` for smaller headings; the home CTA includes supporting copy, while the About CTA omits it.
+- Services page hero uses `services-hero` to style the secondary `h2` as a smaller sans subheading under the page title.
+- Services page separates the hero intro and “Our Process” section with extra `services-process` top padding instead of a divider.

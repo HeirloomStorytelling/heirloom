@@ -4,7 +4,7 @@ permalink: /about/
 page_class: interior-page
 description: Learn more about Heirloom Storytelling Services and the thoughtful, one-on-one approach behind each story.
 ---
-<section class="page-hero page-hero--compact section-block--narrow">
+<section class="page-hero page-hero--compact section-block--narrow about-page__hero">
   <div class="page-hero__content reveal">
     <h1>Why Heirloom?</h1>
     <p>At Heirloom, we believe your life story deserves to be preserved with care.</p>
@@ -35,10 +35,9 @@ description: Learn more about Heirloom Storytelling Services and the thoughtful,
   </div>
 </section>
 
-<section class="cta-band section-block section-block--compact reveal">
+<section class="cta-band cta-band--next-steps section-block section-block--compact reveal">
   <p class="eyebrow">Next Steps</p>
   <h2>Explore available services or begin a conversation.</h2>
-  <p>Use the links below to review offerings or request a consultation.</p>
   <div class="hero__actions cta-actions">
     <a class="button" href="{{ '/services/' | relative_url }}">View Services</a>
     <a class="button button--ghost" href="{{ '/contact/' | relative_url }}">Request a Consultation</a>

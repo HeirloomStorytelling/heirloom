@@ -4,17 +4,16 @@ permalink: /services/
 page_class: interior-page
 description: Explore Heirloom Storytelling Services and the ways family stories can be recorded, shaped, and preserved.
 ---
-<section class="page-hero page-hero--compact section-block--narrow">
+<section class="page-hero page-hero--compact section-block--narrow services-hero">
   <div class="page-hero__content reveal">
-    <p class="eyebrow">Services</p>
-    <h1>Storytelling services tailored to the memories you want to preserve.</h1>
+    <h1>Services</h1>
+    <h2>Storytelling services tailored to the memories you want to preserve.</h2>
     <p>Each service can be shaped around the story, format, and level of support your family needs.</p>
   </div>
 </section>
 
 <section class="section-block section-block--narrow services-process" id="our-process">
   <div class="section-heading reveal">
-    <p class="eyebrow">Our Process</p>
     <h2>Our Process</h2>
     <p>We believe no two stories are alike. Every service is fully customizable, ensuring your heirloom reflects your voice, your experiences, and your legacy.</p>
     <p>To ensure a truly personal experience, you will work closely with the same professional storyteller from beginning to end, allowing your story to be shaped with care, continuity, and a deep understanding of what matters most to you.</p>
